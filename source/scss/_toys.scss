@@ -1,0 +1,363 @@
+.catalog_list-ty {
+    cursor: pointer;
+    width: 380px;
+}
+
+.toys_button_vector_1-ty {
+    margin-right: 457px;
+}
+
+.toys_button_vector_2-ty {
+    margin-left: 457px;
+}
+
+.toys_button-ty:hover {
+    opacity: 0.6;
+}
+
+.blog_alt {
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.rating_main-ty {
+    margin-left: 6px;
+}
+
+.toys_button-ty {
+    margin-top: 78px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin-bottom: 63px;
+}
+
+.toys_button_alt-ty {
+    margin-top: 78px;
+    color: #C29974;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.catalog_1-ty {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+    flex-wrap: wrap;
+}
+
+.toys_head-ty {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.toys_list-ty {
+    font-family: 'Crimson Text', serif;
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.toys_list-ty:hover,
+.toys_list-ty:active,
+.toys_list-ty:hover {
+    opacity: 0.6;
+}
+
+.technical-ty::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 360px;
+    left: 0px;
+    width: 100%;
+    min-height: 254px;
+    background: #E1F0F7;
+    z-index: -1;
+}
+
+.techncal_button-ty {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 22px;
+    padding-left: 22px;
+    font-family: 'Montserrat', sans-serif;
+    background: black;
+    color: white;
+    margin-top: 24px;
+    border: #000;
+    margin-bottom: 200px;
+}
+
+.blog_footer-ty {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog_name-ty,
+.catalog_price-ty {
+    color: black;
+    font-family: 'Open Sans', sans-serif
+}
+
+.cost_text-ty {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.color_checkbox-ty,
+.delivery_radio-ty,
+.amount_radio-ty {
+    display: none;
+}
+
+.Color_text-ty,
+.delivery_text-ty,
+.amount_text-ty {
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Color_list-ty {
+    position: relative;
+    right: 63px;
+    top: 15px;
+}
+
+.delivery_list-ty {
+    position: relative;
+    right: 85px;
+    top: 15px;
+}
+
+.delivery_text-ty {
+    position: relative;
+}
+
+.one-ty {
+    top: 15px;
+}
+
+.two-ty {
+    top: 30px;
+}
+
+.three-ty {
+    top: 45px;
+}
+
+.four-ty {
+    top: 60px;
+}
+
+.one_Alt-ty {
+    top: 15px;
+}
+
+.two_Alt-ty {
+    top: 30px;
+}
+
+.color_label-ty:hover {
+    text-decoration: underline;
+}
+
+.Color_text-ty::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 19px;
+    width: 19px;
+    border: 2px solid #C29974;
+    background: transparent;
+    border-radius: 20%;
+    left: -40px;
+    bottom: -4px;
+}
+
+.Color_text-ty::before {
+    content: url('../img/button6.png');
+    position: absolute;
+    display: block;
+    background: white;
+    height: 19px;
+    width: 19px;
+    border-radius: 20%;
+    left: -38px;
+    opacity: 0;
+}
+
+.delivery_label-ty:hover {
+    text-decoration: underline;
+}
+
+.delivery_text-ty::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #C29974;
+    left: -40px;
+    top: 0px;
+    border-radius: 50%;
+}
+
+.delivery_text-ty::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 12px;
+    width: 12px;
+    background: #C29974;
+    border-radius: 50%;
+    left: -34px;
+    top: 6px;
+    opacity: 0;
+}
+
+input [type=range] {
+    color: #C29974;
+    background: #E1F0F7;
+}
+
+.list_name-ty {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    right: 25px;
+}
+
+.settings-ty {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 102px;
+    margin-top: 92px;
+    align-items: flex-start;
+}
+
+.cost_range-ty {
+    position: relative;
+    top: 45px;
+    right: 70px;
+    height: 24px;
+    width: 188px;
+}
+
+.range_number_0-ty {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    top: 70px;
+    right: 300px;
+}
+
+.range_number_500-ty {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    top: 70px;
+    right: 185px;
+}
+
+.color_checkbox-ty:checked + .Color_text-ty::before {
+    opacity: 1;
+}
+
+.Color_text-ty {
+    position: relative;
+}
+
+.delivery_radio-ty:checked + .delivery_text-ty::before {
+    opacity: 1;
+}
+
+.amount_list-ty {
+    right: 25px;
+    bottom: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.amount_text_alt-ty,
+.amount_text-ty {
+    top: 15px;
+}
+
+.amount_text-ty {
+    background: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 19px;
+    padding-right: 19px;
+    position: relative;
+}
+
+.amount_text_alt-ty {
+    position: relative;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.amount_text-ty:hover, .amount_text_0-5-ty:hover {
+    background: #F3D0DB;
+    opacity: 0.6;
+}
+
+.amount_radio-ty:checked + .amount_text-ty, .amount_text_0-5-ty {
+    background: #F3D0DB;
+}
+
+
+
+.catalog_list-ty {
+    position: relative;
+}
+
+.catalog_text-sharky-ty,
+.catalog_text-brass-ty,
+.catalog_text-cibo-ty,
+.catalog_text-gatcha-ty,
+.catalog_text-christmas-ty,
+.catalog_text-tangle-ty {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    background: #E5EAF8;
+    padding-top: 82px;
+    padding-bottom: 96px;
+    width: 207px;
+}
+
+.catalog_element-sharky-ty,
+.catalog_element-brass-ty,
+.catalog_element-cibo-ty,
+.catalog_element-gatcha-ty,
+.catalog_element-christmas-ty,
+.catalog_element-tangle-ty {
+    opacity: 0;
+    position: absolute;
+    left: 87px;
+    top: 89px;
+}
+
+.catalog_element-sharky-ty:hover,
+.catalog_element-brass-ty:hover,
+.catalog_element-cibo-ty:hover,
+.catalog_element-gatcha-ty:hover,
+.catalog_element-christmas-ty:hover,
+.catalog_element-tangle-ty:hover {
+    opacity: 0.9;
+}
+
+.catalog_element-sharky-ty:active,
+.catalog_element-brass-ty:active,
+.catalog_element-cibo-ty:active,
+.catalog_element-gatcha-ty:active,
+.catalog_element-christmas-ty:active,
+.catalog_element-tangle-ty:active {
+    opacity: 0.67;
+}

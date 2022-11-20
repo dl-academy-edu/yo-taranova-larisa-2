@@ -1,0 +1,34 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  padding-inline-start: 0px;
+}
+
+a {
+  color: white;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+input[type=tel]:hover,
+input[type=email]:hover,
+input[type=text]:hover,
+input[type=tel]:active,
+input[type=email]:active,
+input[type=text]:active {
+    border-color: #C29974;
+}
+
+button:hover,
+button:focus {
+    background: #C29974;
+    border: #C29974;
+}
+
+button:active {
+    background: #CFAF91;
+    border-color: #CFAF91;
+}
