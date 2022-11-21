@@ -1,0 +1,39 @@
+.technical_references-hr {
+    display: flex;
+    padding-top: 20px;
+    color: black;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.blog-hr {
+    margin-left: 60px;
+}
+
+.catalog_header-hr {
+    margin-right: 20px;
+}
+
+.technical_element-hr {
+    margin-right: 20px;
+}
+
+.loupe-hr {
+    max-width: 18px;
+    max-height: 18px;
+    margin-top: 17px;
+    margin-left: 445px;
+    margin-right: 24px;
+    background: white;
+}
+
+.technical_element-hr:hover {
+    opacity: 0.6;
+    transition: 400ms;
+}
+
+.technical_element-hr:active,
+.technical_element-hr:focus {
+    opacity: 0.4;
+    transition: 400ms;
+}
