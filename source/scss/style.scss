@@ -548,6 +548,10 @@
       left: 800px;
       top: 110px;
       z-index: 0;
+      
+      @media screen and (min-width: 768px) and (max-width: 1179px) {
+        display: none;
+    }
   }
 
   &__footer-ind {
@@ -629,6 +633,7 @@
   margin-top: 95px;
   font-size: 38px;
   font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
 
   &__catalog-ind {
     font-family: 'Montserrat', sans-serif;
@@ -641,6 +646,10 @@
     font-size: 26px;
     flex-wrap: wrap;
     margin-bottom: 21px;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        margin-left: 286px;
+    }
   }
 
   &__apparel-ind {
@@ -899,6 +908,7 @@
     margin-bottom: 20px;
   }
 }
+
 
 .contacts-ind::before {
   content: '';
@@ -1339,7 +1349,6 @@
   &__radio-ty:checked + &__text-ty::before {
     opacity: 1;
   }
-
 }
 
 input [type=range] {
@@ -1362,6 +1371,14 @@ input [type=range] {
   right: 70px;
   height: 24px;
   width: 188px;
+  border-radius: 1px;
+  width: 194px;
+  height: 6px;
+  margin-top: 25px;
+  outline: 0;
+  border: 1px solid #d4d4d4;
+  background-color: #7f7f7f;
+  -webkit-appearance: none;
 }
 
 .range_number_0-ty {
@@ -1507,6 +1524,12 @@ input [type=range] {
 
 /* Grid */
 
+footer {
+  @media screen and (max-width: 1024px) {
+  display: none;
+  }
+}
+
 .grid_header-gr {
   font-family: 'Montserrat', sans-serif;
   margin-left: 110px;
@@ -1535,6 +1558,24 @@ input [type=range] {
   "G G J S"
   "G G J S"
   "F T T T";
+
+    
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    grid-template-rows: repeat(11, 215px);
+    grid-template-columns: repeat(2, 384px);
+    grid-template-areas:  
+    "B B"
+    "A A"
+    "A A"
+    "C G"
+    "C G"
+    "D D"
+    "D D"
+    "J S"
+    "F J"
+    "F "
+    "T T";
+}
 }
 
 
@@ -1542,6 +1583,8 @@ input [type=range] {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+
 
   // Block-1
 
@@ -1634,7 +1677,7 @@ input [type=range] {
   color: #FFC80A;
   font-size: 12px;
   margin-left: 155px;
-} 
+}
 
 }
 
@@ -1669,7 +1712,6 @@ grid-area: D;
     color: #2198F4;
     font-size: 12px;
   } 
-
 }
 
 // block 6

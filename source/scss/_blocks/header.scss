@@ -2,12 +2,20 @@
     display: flex;
     margin-top: 50px;
 
+    @media screen and (min-width: 768px) and (max-width: 1179px) {
+            margin-left: 60px;
+    }
+
     &__element-hr {
         color: black;
         font-size: 14px;
         font-family: 'Open Sans', sans-serif;
         margin-right: 20px;
         transition: 400ms;
+
+        @media screen and (min-width: 768px) and (max-width: 1179px) {
+            display: none;
+        }
     }
 
     &__list {
@@ -32,6 +40,10 @@
         margin-left: 445px;
         margin-right: 24px;
         background: white;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            margin-left: 286px;
+        }
     }
 
     &__blog_index-hr {
@@ -41,4 +53,23 @@
     &__blog_other_pages-hr {
         margin-left: 44px;
     }
+
+    &__button {
+        display: none;
+        margin-top: 17px;
+        background: transparent;
+        color: black;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        margin-right: 20px;
+        transition: 400ms;
+        border: none;
+        margin-left: 241px;
+
+        @media screen and (min-width: 768px) and (max-width: 1179px) {
+            display: block;
+        }
+    }
+    
+
 }
