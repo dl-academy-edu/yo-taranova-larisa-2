@@ -1525,7 +1525,7 @@ input [type=range] {
 /* Grid */
 
 footer {
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1400px) {
   display: none;
   }
 }
@@ -1560,24 +1560,24 @@ footer {
   "F T T T";
 
     
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 376px) and (max-width: 1000px) {
     grid-template-rows: repeat(11, 215px);
     grid-template-columns: repeat(2, 384px);
     grid-template-areas:  
-    "B B"
-    "A A"
-    "A A"
-    "C G"
-    "C G"
-    "D D"
-    "D D"
-    "J S"
-    "F J"
-    "F "
-    "T T";
+  "B B"
+  "A A"
+  "A A"
+  "C J"
+  "C J"
+  "D D"
+  "D D"
+  "G S"
+  "G S"
+  "F S"
+  "F S"
+  "T T";
 }
 }
-
 
 .container_grid {
   max-width: 1400px;
@@ -1590,7 +1590,7 @@ footer {
 
 .block_1 {
   display: flex;
-  max-width: 700px;
+  max-width: 768px;
   grid-area: A;
 
   &__head-gr {
@@ -1624,14 +1624,19 @@ footer {
 
 .block_2 {
   padding-top: 74px;
-  width: 700px;
+  width: 768px;
   background: #F7F8FA;
   padding-bottom: 74px;
   grid-area: B;
 
+  @media screen and (min-width: 768px) and (max-width: 1000px) {
+  padding-bottom: 51px;
+  padding-top: 51px;
+  }
+
 &__head-gr {
   font-size: 12px;
-  margin-left: 312px;
+  margin-left: 345px;
 }
 
 &__header-gr {
@@ -1640,6 +1645,13 @@ footer {
   text-align: center;
   margin-left: 125px;
   line-height: 58px;
+
+  @media screen and (min-width: 768px) and (max-width: 1000px) {
+    width: 500px;
+    font-size: 35px;
+    line-height: 42px;
+    margin-left: 134px;
+  }
 }
 
 &__link-gr {
@@ -1647,6 +1659,10 @@ footer {
   font-size: 14px;
   text-decoration: underline;
   margin-left: 303px;
+
+  @media screen and (min-width: 768px) and (max-width: 1000px) {
+    margin-left: 337px;
+  }
 } 
 
 }
