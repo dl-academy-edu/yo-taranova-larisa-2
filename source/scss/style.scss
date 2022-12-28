@@ -139,118 +139,207 @@
   line-height: 22px;
   margin-top: 55px;
 
+  @media screen and (max-width: 880px) {
+    margin-left: 60px;
+  }
+
+  @media screen and (max-width: 708px) {
+    width: 335px;
+  }
+
   &__main-cg {
       font-family: 'Montserrat', sans-serif;
       font-size: 38px;
       line-height: 46px;
       margin-bottom: 26px;
+      
+    @media screen and (max-width: 708px) {
+      font-size: 24px;
+    }
   }
 
   &__bottom-cg {
       margin-bottom: 55px;
   }
-
 }
 
-.catalog_1-cg {
-  text-align: center;
-  position: relative;
-  font-size: 26px;
-  justify-content: space-between;
-  margin-right: 305px;
-  color: black;
-  padding-inline-start: 0px;
-  display: flex;
-  font-family: 'Montserrat', sans-serif;
-  margin-top: 53px;
+.catalog-cg {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 60px;
 
-  &__list_1-cg {
-      width: 280px;
-      height: 270px;
-      background: cornflowerblue;
+  &__text {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 100px; 
+
+    @media screen and (min-width: 708px) and (max-width: 940px) {
+      margin-top: 70px;
+    }
+
+    @media screen and (max-width: 708px) {
+      margin-top: 60px;
+      font-size: 21px;
+    }
   }
 
-  &__apparel_kids-cg {
-      position: absolute;
-      top: 107px;
-      left: 76px;
+  &__text-alt {
+    margin-top: 120px;
+    
+    @media screen and (min-width: 708px) and (max-width: 940px) {
+      margin-top: 90px;
+    }
+
+    @media screen and (max-width: 708px) {
+      margin-top: 70px;
+    }
+  }
+
+  &__mar-left {
+    margin-right: 20px;
+  }
+
+  &__section-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   
-  &__holiday-cg {
-      position: absolute;
-      top: 107px;
-      left: 380px;
-  }
-  
-  &__toys-cg {
-      position: absolute;
-      top: 123px;
-      left: 705px;
+  &__section-2 {
+    margin-top: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  &__apparel_kids-cg:hover,
-  &__apparel_kids-cg:active,
-  &__holiday-cg:hover,
-  &__holiday-cg:active,
-  &__toys-cg:hover,
-  &__toys-cg:active {
-      text-decoration: underline;
+  &__list-AK {
+    width: 280px;
+    height: 270px;
+    background-image: url(/build/img/sweater.png);
+
+    @media screen and (min-width: 709px) and (max-width: 940px) {
+      width: 203px;
+      height: 196px;
+      background-image: url(/build/img/sweater-tablet.png);
+    }
+
+    @media screen and (max-width: 708px) {
+      width: 160px;
+      height: 154px;
+      background-image: url(/build/img/sweater-mobile.png);
+    }
+  }
+
+  &__list-HS {
+    width: 280px;
+    height: 270px;
+    background-image: url(/build/img/sock.png);
+
+    @media screen and (min-width: 709px) and (max-width: 940px) {
+      width: 203px;
+      height: 196px;
+      background-image: url(/build/img/sock-tablet.png);
+    }
+
+    @media screen and (max-width: 708px) {
+      width: 160px;
+      height: 154px;
+      background-image: url(/build/img/sock-mobile.png);
+    }
+  }
+
+  &__list-T {
+    width: 280px;
+    height: 270px;
+    background-image: url(/build/img/deer.png);
+    
+    @media screen and (min-width: 709px) and (max-width: 940px) {
+      width: 203px;
+      height: 196px;
+      background-image: url(/build/img/deer-tablet.png);
+    }
+
+    @media screen and (max-width: 708px) {
+      width: 160px;
+      height: 154px;
+      background-image: url(/build/img/deer-mobile.png);
+    }
+  }
+
+  &__list-A {
+    width: 280px;
+    height: 270px;
+    margin-left: 200px;
+    background-image: url(/build/img/monkey.png);
+
+    @media screen and (max-width: 1139px) {
+      margin-left: 0;
+    }
+
+    @media screen and (min-width: 709px) and (max-width: 940px) {
+      width: 203px;
+      height: 196px;
+      background-image: url(/build/img/monkey-tablet.png);
+    }
+
+    @media screen and (max-width: 708px) {
+      width: 160px;
+      height: 154px;
+      background-image: url(/build/img/monkey-mobile.png);
+    }
+  }
+
+  &__list-S {
+    width: 280px;
+    height: 270px;
+    background-image: url(/build/img/flamingo.png);
+    
+    @media screen and (min-width: 709px) and (max-width: 940px) {
+      width: 203px;
+      height: 196px;
+      background-image: url(/build/img/flamingo-tablet.png);
+    }
+
+    @media screen and (max-width: 708px) {
+      width: 160px;
+      height: 154px;
+      background-image: url(/build/img/flamingo-tablet.png);
+    }
+  }
+
+  &__list-AA {
+    width: 280px;
+    height: 270px;
+    background-image: url(/build/img/skirt.png);
+    
+    @media screen and (min-width: 709px) and (max-width: 940px) {
+      width: 203px;
+      height: 196px;
+      background-image: url(/build/img/skirt-tablet.png);
+    }
+
+    @media screen and (max-width: 708px) {
+      width: 160px;
+      height: 154px;
+      background-image: url(/build/img/skirt-tablet.png);
+    }
   }
 }
-
-.catalog_2-cg {
-  margin-right: 100px;
-  text-align: center;
-  position: relative;
-  font-size: 26px;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 200px;
-  padding-inline-start: 0px;
-  font-family: 'Montserrat', sans-serif;
-
-  &__list_2-cg {
-      width: 280px;
-      height: 270px;
-      background: cornflowerblue;
-  }
-
-  &__accessories-cg {
-      position: absolute;
-      top: 120px;
-      left: 45px;
-  }
-  
-  &__sale-cg {
-      position: absolute;
-      top: 120px;
-      left: 405px;
-  }
-  
-  &__apparel_adults-cg {
-      position: absolute;
-      top: 105px;
-      left: 675px ;
-  }
-
-  &__accessories-cg:hover,
-  &__accessories-cg:active,
-  &__apparel_adults-cg:hover,
-  &__apparel_adults-cg:active,
-  &__sale-cg:hover,
-  &__sale-cg:active {
-      text-decoration: underline;
-  }
-}
-
-/* Other elements */
 
 .category_products_head-cg {
   font-family: 'Montserrat', sans-serif;
   font-size: 38px;
   margin-top: 60px;
-  margin-left: 1px;
+  margin-left: 60px;
   margin-bottom: 15px;
+  margin-top: 70px;
+
+  @media screen and (max-width: 579px) {
+    font-size: 24px;
+  }
 }
 
 .category_pages-cg {
@@ -258,6 +347,7 @@
   font-family: 'Crimson Text', serif;
   font-size: 20px;
   transition: 400ms;
+  margin-left: 60px;
 }
 
 .left-cg {
@@ -276,6 +366,8 @@
   transition: 400ms;
 }
 
+
+
 /* CONTACT-US */
 
 /* БЭМ */
@@ -283,8 +375,7 @@
 .page_name-c-s {
   font-family: 'Montserrat', sans-serif;
 }
-
-
+s
 .contact_flex-c-s::after {
   content: '';
   position: absolute;
@@ -1525,6 +1616,7 @@ input [type=range] {
 /* Grid */
 
 footer {
+  display: none;
   @media screen and (max-width: 1400px) {
   display: none;
   }

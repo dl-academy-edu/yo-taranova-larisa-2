@@ -2,12 +2,61 @@
     display: flex;
     margin-top: 50px;
 
-    @media screen and (min-width: 1025px) and (max-width: 1180px) {
-            margin-left: 360px;
+    @media screen and (max-width: 880px) {
+        justify-content: space-between;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-        margin-left: 80px;
+    &__div-1 {
+        margin-top: 16px;
+        margin-left: 44px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        @media screen and (max-width: 880px) {
+            margin-right: 0;
+        }
+    }
+
+    &__menu-hr {
+        display: none;
+        background: transparent;
+        color: black;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        transition: 400ms;
+        border: none;
+        margin-top: 16px;
+
+        @media screen and (max-width: 880px) {
+            display: block;
+        }
+    }
+    
+    &__menu-hr:active,
+    &__menu-hr:hover {
+        background: transparent;
+    }
+
+    &__div-2 {
+        margin-top: 16px;
+        margin-left: 44px;
+        display: flex;
+    }
+
+    &__loupe-hr {
+        margin-left: 23px;
+        
+        @media screen and (max-width: 880px) {
+            margin-left: 0;
+        }
+    }
+
+    &__DLK {
+        margin-left: 60px;
+        
+        @media screen and (max-width: 880px) {
+            margin-right: 200px;
+        }
     }
 
     &__element-hr {
@@ -17,13 +66,15 @@
         margin-right: 20px;
         transition: 400ms;
 
-        @media screen and (min-width: 768px) and (max-width: 1180px) {
+        @media screen and (max-width: 880px) {
             display: none;
         }
     }
 
     &__list {
-        margin-top: 16px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__element-hr:hover {
@@ -36,44 +87,4 @@
         opacity: 0.4;
         transition: 400ms;
     }
-
-    &__loupe-hr {
-        max-width: 18px;
-        max-height: 18px;
-        margin-top: 17px;
-        margin-left: 445px;
-        margin-right: 24px;
-        background: white;
-
-        @media screen and (min-width: 768px) and (max-width: 1180px) {
-            margin-left: 286px;
-        }
-    }
-
-    &__blog_index-hr {
-        margin-left: 60px;
-    }
-
-    &__blog_other_pages-hr {
-        margin-left: 44px;
-    }
-
-    &__button {
-        display: none;
-        margin-top: 17px;
-        background: transparent;
-        color: black;
-        font-size: 14px;
-        font-family: 'Open Sans', sans-serif;
-        margin-right: 20px;
-        transition: 400ms;
-        border: none;
-        margin-left: 241px;
-
-        @media screen and (max-width: 1179px) {
-            display: block;
-        }
-    }
-    
-
 }
