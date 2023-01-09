@@ -1,5 +1,4 @@
 /* БЭМ */
-//<li><button class="technical_references-hr__button">MENU</button></li>
 .container_footer-ft {
     background:#434343;
     color: #AAAAAA;
@@ -7,31 +6,75 @@
     padding-left: 340px;
     position: relative;
 
+    
+    @media screen and (max-width: 1115px) {
+        padding-left: 0;
+    }
+
     &__element_heading-ft {
         margin-bottom: 53px;
     }
 
-    &__element_heading-ft::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 380px;
-        height: 1px;
-        background-color: #666666;
-        top: 85px;
-        margin-bottom: 53px;
+    
+    @media screen and (max-width: 480px) {
+        padding-left: 20px;
     }
 
     &__flex-ft {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__navigation-ft {
         margin-right: 242px;
+
+        @media screen and (max-width: 1418px) {
+            margin-right: 65px;
+        }
     }
+
+    &__navigation-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        @media screen and (max-width: 483px) {
+            max-height: 90px;
+        }
+    }
+
+    &__navigation-div {
+                
+        @media screen and (max-width: 483px) {
+            margin-right: 73px;
+        }
+    }
+
+
     
     &__information-ft {
-        margin-right: 190px;
+        margin-right: 200px;
+
+        @media screen and (max-width: 1418px) {
+            margin-right: 74px;
+        }
+    }
+
+    &__information-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        @media screen and (max-width: 483px) {
+            max-height: 90px;
+        }
+    }
+
+    &__information-div {
+                
+        @media screen and (max-width: 483px) {
+            margin-right: 49px;
+        }
     }
 
     &__link_element-ft {
@@ -55,13 +98,21 @@
     }
 
     &__email-ft {
-        width: 290px;
+        width: 100%;
         height: 40px;
         background: #666666;
         border: #666666;
         z-index: 1;
         padding-left: 10px;
         border: 1px;
+
+        @media screen and (max-width: 775px) {
+            width: 121px;
+        }
+
+        @media screen and (max-width: 483px) {
+            width: 263px;
+        }
     }
 
     &__email_button-ft {
@@ -93,29 +144,32 @@
         opacity: 0.4;
         transition: 400ms;
     }
-
-    &__copyright_alt-ft {
-        color: white;
-        margin-right: 105px;
-    }
-
-    &__main-ft::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 1180px;
-        height: 1px;
-        background-color: #666666;
-        bottom: 165px;
-    }
 }
 
 /* Other elements */
 
+.footer_bottom-ft {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    padding-top: 25px;
+}
 
 .copyright-ft {
     color: white;
     margin-right: 110px;
+    
+    @media screen and (max-width: 394px) {
+        font-size: 14px;
+    }
+}
+
+.direct_line-ft {
+        
+    @media screen and (max-width: 394px) {
+        font-size: 14px;
+    }
 }
 
 .footer_text-ft {
@@ -137,8 +191,15 @@
 .rating_text-ft {
     margin-right: 25px;
     color: white;
-}
 
+    @media screen and (max-width: 394px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 414px) {
+        margin-right: 5px;
+    }
+}
 .rating_main-ft {
     margin-right: 180px;
     top: 20px;
@@ -198,13 +259,6 @@
 
 .forums_footer-ft {
     display: flex;
-}
-
-.footer_bottom-ft {
-    position: relative;
-    display: flex;
-    padding-bottom: 100px;
-    padding-top: 25px;
 }
   
 .main_rating-ft {
