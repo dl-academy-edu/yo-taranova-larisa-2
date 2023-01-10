@@ -123,6 +123,14 @@ gulp.task('svg-store', function () {
     .pipe(gulp.dest(paths.src + '/img/'));
 });
 
+gulp.task("copy", function () { 
+  return gulp 
+    .src([paths.src + "/img/**/*", paths.src + "/music/**/*"], { 
+      base: paths.src, 
+    }) 
+    .pipe(gulp.dest(paths.build)); 
+});
+
 gulp.task('build-dev', gulp.series('clean', gulp.parallel('styles', 'render-view'), 'copy', 'copy-js'));
 
 gulp.task('build', gulp.series('clean', gulp.parallel('styles', 'render-view'), 'copy', 'copy-js'));
