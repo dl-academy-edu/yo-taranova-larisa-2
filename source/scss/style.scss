@@ -637,6 +637,7 @@ s
 
   &__monster-ind {
       font-size: 40px;
+      font-weight: 600;
       font-family: 'Montserrat', sans-serif;
       max-width: 307px;
       padding-left: 134px;
@@ -759,6 +760,7 @@ s
 
   &__catalog-ind {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     position: relative;
     display: flex;
     color: black;
@@ -1657,7 +1659,7 @@ input [type=range] {
   "F T T T";
 
     
-  @media screen and (max-width: 1399px) {
+  @media screen and (max-width: 1399px) and (min-width: 768px) {
     grid-template-rows: repeat(11, 215px);
     grid-template-columns: repeat(2, 384px);
     grid-template-areas:  
@@ -1674,6 +1676,32 @@ input [type=range] {
   "F S"
   "T T";
 }
+
+@media screen and (max-width: 767px) {
+  grid-template-rows: repeat(20, 200px);
+  grid-template-columns: repeat(1, 375px);
+  grid-template-areas: 
+  "B"
+  "B"
+  "A"
+  "A"
+  "A"
+  "C"
+  "C"
+  "J"
+  "J"
+  "D"
+  "D"
+  "D"
+  "G"
+  "G"
+  "F"
+  "S"
+  "S"
+  "S"
+  "T"
+  "T";
+}
 }
 
 .container_grid {
@@ -1681,37 +1709,62 @@ input [type=range] {
   margin: 0 auto;
 }
 
-
-
   // Block-1
 
 .block_1 {
   display: flex;
   grid-area: A;
 
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
   &__head-gr {
     font-size: 12px;
     margin-top: 135px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 20px;
+    }
   }
 
   &__header-gr {
-    width: 220px;
+    max-width: 220px;
     font-size: 22px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 20px;
+      min-width: 320px;
+    }
   }
 
   &__text-gr {
-    width: 220px;
+    max-width: 220px;
     font-size: 14px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 20px;
+      min-width: 247px;
+    }
   } 
 
   &__img-gr {
     margin-top: 81px;
     margin-right: 114px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 40px;
+      margin-left: 50px;
+    }
   }
 
   &__div_1-gr {
     margin-left: 114px;
     margin-right: 71px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 20px;
+    }
   }
 
 }
@@ -1734,6 +1787,10 @@ input [type=range] {
   @media screen and (max-width: 1399px) {
     margin-left: 340px;
   }
+
+  @media screen and (max-width: 767px) {
+    margin-left: 20px;
+  }
 }
 
 &__header-gr {
@@ -1751,6 +1808,12 @@ input [type=range] {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  @media screen and (max-width: 767px) {
+    margin-left: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
 }
 
 &__link-gr {
@@ -1761,6 +1824,10 @@ input [type=range] {
 
   @media screen and (max-width: 1399px) {
     margin-left: 337px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: 20px;
   }
 } 
 
@@ -1802,9 +1869,17 @@ padding-top: 91px;
 display: flex;
 grid-area: D;
 
+@media screen and (max-width: 767px) {
+  flex-direction: column;
+}
+
   &__head-gr {
     font-size: 12px;
     margin-left: 95px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 20px;
+  }
   }
 
   &__header-gr {
@@ -1813,24 +1888,35 @@ grid-area: D;
     line-height: 26px;
     margin-bottom: 45px;
     margin-left: 95px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 20px;
+    }
   }
 
   &__text-gr {
     width: 230px;
     font-size: 14px;
     line-height: 17px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 20px;
+    }
   } 
 
   &__link-gr {
     color: #2198F4;
     font-size: 12px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 20px;
+    }
   } 
 }
 
 // block 6
 
 .block_6 {
-  padding-top: 148px;
   background: #8F75BC;
   grid-area: S;
 
@@ -1929,9 +2015,6 @@ grid-area: G;
 
 .block_8 {
   background: #F7F8FA;
-  max-width: 350px;
-  max-height: 430px;
-  padding-bottom: 95px;
   grid-area: J;
 
   &__img-gr {
@@ -1980,6 +2063,11 @@ grid-area: G;
       margin-top: 145px;
       margin-left: 169px;
     }
+
+    @media screen and (max-width: 767px) {
+      margin-top: 57px;
+      margin-left: 159px;
+    }
   }
 }
 
@@ -1990,11 +2078,19 @@ grid-area: G;
   display: flex;
   grid-area: T;
 
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
   &__img-gr {
     margin-left: 200px;
 
     @media screen and (max-width: 1399px) {
       margin-left: 60px;
+    }
+
+    @media screen and (max-width: 1399px) {
+      margin-left: 0px;
     }
   }
 
@@ -2004,6 +2100,10 @@ grid-area: G;
     font-size: 22px;
     margin-left: 80px;
     margin-top: 80px;
+
+    @media screen and (max-width: 1399px) {
+      text-align: center;
+    }
   }
 }
 

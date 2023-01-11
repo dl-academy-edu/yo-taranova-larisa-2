@@ -120,7 +120,11 @@
 
 // mobile menu \\
 
-.mobile-menu {
+.link-hr {
+    display: none;
+}
+
+.mobile-menu-active {
     position: fixed;
     width: 100%;
     left: 0;
@@ -128,7 +132,7 @@
     flex-direction: column;
     text-align: center;
     background: white;
-    display: none;
+    display: flex;
 
     &__link,
     &__link-cs {
@@ -144,11 +148,7 @@
     }
 }
 
-.menu-hr:active + .mobile-menu {
-    display: block;
-}
-
-.mobile-menu::before {
+.mobile-menu-active::before {
     content: '';
     position: fixed;
     display: block;
