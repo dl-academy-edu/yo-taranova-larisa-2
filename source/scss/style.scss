@@ -1257,8 +1257,6 @@ s
   opacity: 0.6;
 }
 
-
-
 .toys_button-ty {
   margin-top: 78px;
   font-family: 'Montserrat', sans-serif;
@@ -1273,8 +1271,6 @@ s
   font-family: 'Montserrat', sans-serif;
   margin-right: 20px;
 }
-
-
 
 .toys_head-ty {
   font-family: 'Montserrat', sans-serif;
@@ -1329,25 +1325,11 @@ s
   font-family: 'Open Sans', sans-serif;
 }
 
-.Color_list-ty {
-  
-  // &__one-ty {
-  //   top: 15px;
-  // }
-  
-  // &__two-ty {
-  //   top: 30px;
-  // }
-  
-  // &__three-ty {
-  //   top: 45px;
-  // }
-  
-  // &__four-ty {
-  //   top: 60px;
-  // }
+.list_name-ty {
+  font-family: 'Open Sans', sans-serif;
+}
 
-  
+.Color_list-ty {
 
   &__label-ty:hover {
   text-decoration: underline;
@@ -1363,15 +1345,14 @@ s
 
   &__text-ty::after {
     content: '';
-    position: absolute;
+    position: relative;
     display: block;
     height: 19px;
     width: 19px;
     border: 2px solid #C29974;
     background: transparent;
     border-radius: 20%;
-    top: 0px;
-    left: -40px;
+    bottom: 22px;
   }
 
   &__text-ty::before {
@@ -1383,53 +1364,29 @@ s
     width: 19px;
     border-radius: 20%;
     opacity: 0;
-    top: 2px;
-    left: -38px;
-  }
-
-    
-  &__text-ty {
-    position: relative;
+    left: -27px;
   }
 
   &__text-ty {
+    margin-left: 30px;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
+    position: relative;
   }
 
 }
 
 .delivery_list-ty {
-  position: relative;
-  right: 85px;
-  top: 15px;
-
-
-  &__text-ty {
-    position: relative;
-  }
-  
-  &__one_Alt-ty {
-    top: 15px;
-  }
-  
-  &__two_Alt-ty {
-    top: 30px;
-  }
-  
-  &__label-ty:hover {
-    text-decoration: underline;
-  } 
 
   &__text-ty::after {
     content: '';
-    position: absolute;
+    position: relative;
     display: block;
     height: 20px;
     width: 20px;
     border: 2px solid #C29974;
     left: -40px;
-    top: 0px;
+    bottom: 19px;
     border-radius: 50%;
   }
 
@@ -1446,15 +1403,14 @@ s
     opacity: 0;
   }
 
-  
  &__radio-ty {
     display: none;
  }
 
-  
   &__text-ty {
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
+  position: relative;
 }
  
   &__radio-ty:checked + &__text-ty::before {
@@ -1478,10 +1434,7 @@ input [type=range] {
 
 .cost_range-ty {
   position: relative;
-  top: 45px;
-  right: 70px;
   height: 24px;
-  width: 188px;
   border-radius: 1px;
   width: 194px;
   height: 6px;
@@ -1492,11 +1445,9 @@ input [type=range] {
   -webkit-appearance: none;
 }
 
-.range_number_0-ty {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.range_number_500-ty {
+.range_number{
+  display: flex;
+  justify-content: space-between;
   font-family: 'Open Sans', sans-serif;
 }
 
