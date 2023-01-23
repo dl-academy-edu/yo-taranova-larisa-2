@@ -24,182 +24,196 @@
     <a href="catalog.html" class="toys_list-ty">Catalog</a>
     <img src="img/button3.svg" alt="#">
     <a href="#" class="toys_list-ty">Toys</a>
+
     <div class="technical-ty">
-    <form action="/pages/toys.html" class="settings-ty">
-            <p class="cost_text-ty">Cost</p>
-            <input type="range"
-                    min="0"
-                    max="500"
-                    value="100"
-                    class="cost_range-ty">
-            <p class="range_number_0-ty">0</p>
-            <p class="range_number_500-ty">500</p>
-                <p class="list_name-ty">Color</p>
-                    <ul class="Color_list-ty">
-                        <li>
-                                <label for="color_black" class="color_label-ty">
+        <form action="toys.html" class="settings-ty">
+            <div>
+                <p class="cost_text-ty">Cost</p>
+                <input type="range"
+                min="0"
+                max="500"
+                value="100"
+                class="cost_range-ty">
+                <div class="range_number">
+                    <p>0</p>
+                    <p>500</p>
+                </div>
+            </div>
+
+                <div>
+                    <p class="list_name-ty">Color</p>
+                        <ul class="Color_list-ty">
+                            <li>
+                                <label for="color_black" class="Color_list-ty__label-ty">
                                 <input name="Black"
                                         type="checkbox"
                                         value="color_black"
-                                        class="color_checkbox-ty"
+                                        class="Color_list-ty__checkbox-ty"
                                         id="color_black" checked>
-                                <span class="Color_text-ty one-ty">Black</span></label>
-                        </li>
-                        <li>
-                            <label for="color_blue" class="color_label-ty">
-                                    <input name="Blue"
+                                    <span class="Color_list-ty__text-ty Color_list-ty">Black</span></label>
+                            </li>
+
+                            <li>
+                                <label for="color_blue" class="Color_list-ty__label-ty">
+                                        <input name="Blue"
+                                            type="checkbox"
+                                            value="color_blue"
+                                            class="Color_list-ty__checkbox-ty"
+                                            id="color_blue">
+                                    <span class="Color_list-ty__text-ty Color_list-ty__two-ty">Blue</span></label>
+                            </li>
+
+                            <li>
+                                <label for="color_green" class="Color_list-ty__label-ty">
+                                    <input name="Green"
                                         type="checkbox"
-                                        value="color_blue"
-                                        class="color_checkbox-ty"
-                                        id="color_blue">
-                                <span class="Color_text-ty two-ty">Blue</span></label>
-                        </li>
-                        <li>
-                            <label for="color_green" class="color_label-ty">
-                                <input name="Green"
-                                    type="checkbox"
-                                    value="color_green"
-                                    class="color_checkbox-ty"
-                                    id="color_green">
-                                <span class="Color_text-ty three-ty">Green</span></label>
-                        </li>
-                        <li>
-                            <label for="color_white" class="color_label-ty">
-                                <input name="White" 
-                                    type="checkbox"
-                                    value="color_white"
-                                    class="color_checkbox-ty"
-                                    id="color_white">
-                                <span class="Color_text-ty four-ty">White</span></label>
-                        </li>
-                    </ul>
-                    <p class="list_name-ty">Delivery</p>
-                    <ul class="delivery_list-ty">
-                        <li>
-                            <label for="delivery_check_1" class="delivery_label-ty">
-                                <input name="shipping"
-                                    type="radio"
-                                    value="free_shipping"
-                                    class="delivery_radio-ty"
-                                    id="delivery_check_1">
-                                <span class="delivery_text-ty one_Alt-ty">Free shipping</span></label>
-                        </li>
-                        <li>
-                            <label for="delivery_check_2" class="delivery_label">
-                                <input name="shipping"
-                                    type="radio"
-                                    value="fast_shipping"
-                                    class="delivery_radio-ty" checked
-                                    id="delivery_check_2">
-                                <span class="delivery_text-ty two_Alt-ty">Fast shipping</span></label>
-                        </li>
-                    </ul>
-    
-        <div class="amount-ty">
-            <p class="list_name-ty">Amount</p>
-                <ul class="amount_list-ty">         
-                            <li>
-                            <label for="0-5">
-                                    <input name="Amount"
-                                        type="radio"
-                                        value="Amount 0-5"
-                                        class="amount_radio-ty"
-                                        id="0-5" checked>
-                                    <span class="amount_text-ty amount_text_alt-ty">0-5</span></label>
+                                        value="color_green"
+                                        class="Color_list-ty__checkbox-ty"
+                                        id="color_green">
+                                    <span class="Color_list-ty__text-ty Color_list-ty__three-ty">Green</span></label>
                             </li>
+                            
                             <li>
-                            <label for="10-20">
-                                    <input name="Amount"
-                                        type="radio"
-                                        value="Amount 10-20"
-                                        class="amount_radio-ty"
-                                        id="10-20">
-                                    <span class="amount_text-ty">10-20</span></label>
+                                <label for="color_white" class="Color_list-ty__label-ty">
+                                    <input name="White" 
+                                        type="checkbox"
+                                        value="color_white"
+                                        class="Color_list-ty__checkbox-ty"
+                                        id="color_white">
+                                    <span class="Color_list-ty__text-ty Color_list-ty__four-ty">White</span></label>
                             </li>
-                            <li>
-                            <label for="20-50">
-                                    <input name="Amount"
-                                        type="radio"
-                                        value="Amount 20-50"
-                                        class="amount_radio-ty"
-                                        id="20-50">
-                                    <span class="amount_text-ty">20-50</span></label>
-                        </li>
-                    </ul>
+                        </ul>
                 </div>
-        <button class="techncal_button-ty">APPLY</button>
-    </form>
+
+                        <div>
+                            <p class="list_name-ty">Delivery</p>
+                            <ul class="delivery_list-ty">
+                                <li>
+                                    <label for="delivery_check_1" class="delivery_list-ty__label-ty">
+                                        <input name="shipping"
+                                            type="radio"
+                                            value="free_shipping"
+                                            class="delivery_list-ty__radio-ty"
+                                            id="delivery_check_1">
+                                        <span class="delivery_list-ty__text-ty delivery_list-ty__one_Alt-ty">Free shipping</span></label>
+                                </li>
+                                <li>
+                                    <label for="delivery_check_2" class="delivery_list-ty__label-ty">
+                                        <input name="shipping"
+                                            type="radio"
+                                            value="fast_shipping"
+                                            class="delivery_list-ty__radio-ty" checked
+                                            id="delivery_check_2">
+                                        <span class="delivery_list-ty__text-ty delivery_list-ty__two_Alt-ty">Fast shipping</span></label>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div class="amount-ty">
+                            <p class="list_name-ty">Amount</p>
+                                <ul class="amount_list-ty">         
+                                            <li>
+                                            <label for="0-5">
+                                                    <input name="Amount"
+                                                        type="radio"
+                                                        value="Amount 0-5"
+                                                        class="amount_list-ty__radio-ty"
+                                                        id="0-5" checked>
+                                                    <span class="amount_list-ty__text_alt-ty">0-5</span></label>
+                                            </li>
+                                            <li>
+                                            <label for="10-20">
+                                                    <input name="Amount"
+                                                        type="radio"
+                                                        value="Amount 10-20"
+                                                        class="amount_list-ty__radio-ty"
+                                                        id="10-20">
+                                                    <span class="amount_list-ty__text-ty">10-20</span></label>
+                                            </li>
+                                            <li>
+                                            <label for="20-50">
+                                                    <input name="Amount"
+                                                        type="radio"
+                                                        value="Amount 20-50"
+                                                        class="amount_list-ty__radio-ty"
+                                                        id="20-50">
+                                                    <span class="amount_list-ty__text-ty">20-50</span></label>
+                                        </li>
+                                    </ul>
+                        </div>
+            <button class="techncal_button-ty">APPLY</button>
+        </form>
     </div>
     
     <ul class="catalog_1-ty">
-        <li class="catalog_list-ty">
-            <img src="img/sharky.png" alt="#" class="catalog_img-ty">
-            <a class="catalog_element-sharky-ty" href="#">
+        <li class="catalog_1-ty__list-ty">
+            <img src="img/sharky.png" alt="#">
+            <a class="catalog_1-ty__element-sharky-ty" href="#">
                 <div>
-                    <p class="catalog_text-sharky-ty">LEARN MORE</p>
+                    <p class="catalog_1-ty__text-sharky-ty">LEARN MORE</p>
                 </div>
             </a>
-                <p class="catalog_name-ty">SHARKY BEAN BAG CHAIR COVER<br></p>
-                <p class="catalog_price-ty">$60.00 USD</p>
+                <p class="catalog_1-ty__name-ty">SHARKY BEAN BAG CHAIR COVER<br></p>
+                <p class="catalog_1-ty__price-ty">$60.00 USD</p>
         </li>
     
-        <li class="catalog_list-ty">
-            <img src="img/brass.png" alt="#" class="catalog_img-ty">
-            <a class="catalog_element-brass-ty" href="#">
+        <li class="catalog_1-ty__list-ty">
+            <img src="img/brass.png" alt="#">
+            <a class="catalog_1-ty__element-brass-ty" href="#">
                 <div>
-                    <p class="catalog_text-brass-ty">LEARN MORE</p>
+                    <p class="catalog_1-ty__text-brass-ty">LEARN MORE</p>
                 </div>
             </a>
-                <p class="catalog_name-ty">BRASS DECO FRAMES<br></p>
-                <p class="catalog_price-ty">$66.00 USD</p>
+                <p class="catalog_1-ty__name-ty">BRASS DECO FRAMES<br></p>
+                <p class="catalog_1-ty__price-ty">$66.00 USD</p>
         </li>
     
-        <li class="catalog_list-ty">
-                <img src="img/cibo.png" alt="#" class="catalog_img-ty">        
-                <a class="catalog_element-cibo-ty" href="#">
+        <li class="catalog_1-ty__list-ty">
+                <img src="img/cibo.png" alt="#">        
+                <a class="catalog_1-ty__element-cibo-ty" href="#">
                     <div>
-                        <p class="catalog_text-cibo-ty">LEARN MORE</p>
+                        <p class="catalog_1-ty__text-cibo-ty">LEARN MORE</p>
                     </div>
                 </a>
-                <p class="catalog_name-ty">CIBO FULL APRON<br></p>
-                <p class="catalog_price-ty">$60.00 USD</p>
+                <p class="catalog_1-ty__name-ty">CIBO FULL APRON<br></p>
+                <p class="catalog_1-ty__price-ty">$60.00 USD</p>
         </li>
     
-        <li class="catalog_list-ty">
-            <img src="img/gatha.png" alt="#" class="catalog_img-ty">        
-            <a class="catalog_element-gatcha-ty" href="#">
+        <li class="catalog_1-ty__list-ty">
+            <img src="img/gatha.png" alt="#">        
+            <a class="catalog_1-ty__element-gatcha-ty" href="#">
                 <div>
-                    <p class="catalog_text-gatcha-ty">LEARN MORE</p>
+                    <p class="catalog_1-ty__text-gatcha-ty">LEARN MORE</p>
                 </div>
             </a>
-                <p class="catalog_name-ty">GATCHA GATCHA GUMBALL MACHINE<br></p>
-                <p class="catalog_price-ty">$56.00 USD</p>
+                <p class="catalog_1-ty__name-ty">GATCHA GATCHA GUMBALL MACHINE<br></p>
+                <p class="catalog_1-ty__price-ty">$56.00 USD</p>
         </li>
     
-        <li class="catalog_list-ty">
-            <img src="img/christmas.png" alt="#" class="catalog_img-ty">
-            <a class="catalog_element-christmas-ty" href="#">
+        <li class="catalog_1-ty__list-ty">
+            <img src="img/christmas.png" alt="#">
+            <a class="catalog_1-ty__element-christmas-ty" href="#">
                 <div>
-                    <p class="catalog_text-christmas-ty">LEARN MORE</p>
+                    <p class="catalog_1-ty__text-christmas-ty">LEARN MORE</p>
                 </div>
             </a>
-                <p class="catalog_name-ty">CHRISTMAS ADVENT SCENTED CANDLE<br></p>
-                <p class="catalog_price-ty">$29.00 USD</p>
+                <p class="catalog_1-ty__name-ty">CHRISTMAS ADVENT SCENTED CANDLE<br></p>
+                <p class="catalog_1-ty__price-ty">$29.00 USD</p>
         </li>
     
-        <li class="catalog_list-ty">
-            <img src="img/tangle.png" alt="#" class="catalog_img-ty">
-            <a class="catalog_element-tangle-ty" href="#">
+        <li class="catalog_1-ty__list-ty">
+            <img src="img/tangle.png" alt="#">
+            <a class="catalog_1-ty__element-tangle-ty" href="#">
                 <div>
-                    <p class="catalog_text-tangle-ty">LEARN MORE</p>
+                    <p class="catalog_1-ty__text-tangle-ty">LEARN MORE</p>
                 </div>
             </a>
-                <p class="catalog_name-ty">TANGLE SPINNING TEA LIGHT<br></p>
-                <p class="catalog_price-ty">$56.00 USD</p>
+                <p class="catalog_1-ty__name-ty">TANGLE SPINNING TEA LIGHT<br></p>
+                <p class="catalog_1-ty__price-ty">$56.00 USD</p>
         </li>
     </ul>
     
-    <div class="blog_footer-ty">
+    <div class="toys_footer-ty">
         <img src="img/vector_left.svg" alt="" class="toys_button_vector_1-ty">
         <a href="#" class="toys_button_alt-ty">1</a>
         <a href="#" class="toys_button-ty">2</a>
@@ -210,6 +224,7 @@
 </main>
 
 @@include('blocks/footer.html')
+@@include('blocks\music.html')
 
 </body>
 </html>

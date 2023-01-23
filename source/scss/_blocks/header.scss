@@ -1,39 +1,191 @@
 .technical_references-hr {
     display: flex;
-    padding-top: 20px;
-    color: black;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
+    justify-content: space-between;
+
+    @media screen and (max-width: 880px) {
+        justify-content: space-between;
+    }
+
+    &__div-1 {
+        margin-top: 16px;
+        margin-left: 44px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        @media screen and (max-width: 880px) {
+            margin-right: 0;
+        }
+    }
+
+    &__menu-hr {
+        align-items: center;
+        display: none;
+        background: transparent;
+        color: black;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        transition: 400ms;
+        border: none;
+        margin-top: 16px;
+        cursor: pointer;
+
+        @media screen and (max-width: 880px) {
+            display: block;
+        }
+    }
+
+    &__menu-cross {
+        display: none;
+        border: none;
+        background-color: transparent;
+        margin-top: 18px;
+
+        @media screen and (min-width: 880px) {
+            display: none;
+        }
+    }
+
+    &__menu-hr:active + &__menu-cross {
+        display: block;
+    }
+    
+    &__menu-hr:active,
+    &__menu-hr:hover,
+    &__menu-hr:focus {
+        background: transparent;
+        opacity: 0.6;
+    }
+
+    &__div-2 {
+        margin-top: 16px;
+        margin-left: 44px;
+        display: flex;
+    }
+
+    &__loupe-hr {
+        margin-left: 23px;
+        
+        @media screen and (max-width: 880px) {
+            margin-left: 0;
+        }       
+
+        @media screen and (max-width: 480px) {
+            margin-right: 10px;
+        }
+    }
+
+    &__DLK {
+        margin-left: 60px;
+
+        @media screen and (max-width: 880px) {
+            margin-right: 241px;
+        }
+
+        
+        @media screen and (max-width: 880px) {
+            margin-right: 160px;
+        }  
+
+        @media screen and (max-width: 480px) {
+            margin-right: 100px;
+            margin-left: 10px;
+        }
+    }
+
+    &__element-hr {
+        color: black;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        margin-right: 20px;
+        transition: 400ms;
+
+        @media screen and (max-width: 880px) {
+            display: none;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__element-hr:hover {
+        opacity: 0.6;
+        transition: 400ms;
+    }
+    
+    &__element-hr:active,
+    &__element-hr:focus {
+        opacity: 0.4;
+        transition: 400ms;
+    }
 }
 
-.blog-hr {
-    margin-left: 60px;
+.menu-hr_inActiv {
+    display: none;
 }
 
-.catalog_header-hr {
-    margin-right: 20px;
+.menu-cross_active {
+    display: block;
+
+    @media screen and (min-width: 880px) {
+        display: none;
+    }
 }
 
-.technical_element-hr {
-    margin-right: 20px;
+// mobile menu \\
+
+.mobile-menu {
+    display: none;
+
+    &__link {
+        display: none;
+    }
+    &__link-cs {
+        display: none;
+    }
 }
 
-.loupe-hr {
-    max-width: 18px;
-    max-height: 18px;
-    margin-top: 17px;
-    margin-left: 445px;
-    margin-right: 24px;
+.mobile-menu_active {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     background: white;
+    display: flex;
+
+    &__link_active,
+    &__link_active-cs {
+        color: black;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 20px;
+        transition: 400ms;
+    }
+
+    &__link_active-cs {
+        margin-top: 35px;
+    }
+
+    @media screen and (min-width: 880px) {
+        display: none;
+    }
 }
 
-.technical_element-hr:hover {
-    opacity: 0.6;
-    transition: 400ms;
-}
+.mobile-menu_active::before {
+    content: '';
+    position: fixed;
+    display: block;
+    background-color: #7D97DACC;
+    height: 100%;
+    width: 100%;
+    top: 438px;
 
-.technical_element-hr:active,
-.technical_element-hr:focus {
-    opacity: 0.4;
-    transition: 400ms;
+    @media screen and (min-width: 880px) {
+        display: none;
+    }
 }

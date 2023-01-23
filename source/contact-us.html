@@ -25,44 +25,45 @@
 <main class="container">
     <div class="pages_list-c-s">
     <h1 class="page_name-c-s">CONTACT US</h1>
-        <a href="/pages/index.html" class="pages-c-s left-c-s">Home</a>
+        <a href="index.html" class="pages-c-s left-c-s">Home</a>
         <img src="img/button3.svg" alt="#">
-        <a href="/pages/contact-us.html" class="pages-c-s right-c-s">Contact-us</a>
+        <a href="contact-us.html" class="pages-c-s right-c-s">Contact-us</a>
     </div>
 <div class="contact_flex-c-s">
-    <form action="#" class="form-c-s">
-        <div class="contact_name-c-s">
-            <div class="imput_text_list-c-s">
-                <p class="name_text-c-s">Name</p>
-                    <input placeholder="Ivan Ivanov" type="text" class="name_input-c-s">
-                    <div class="phone_add_email_text-c-s">
-                        <p class="email_text-c-s">Email</p>
-                        <p class="phone_text-c-s">Phone</p>
+    <form action="#" class="contact_flex-c-s__form-c-s">
+        <div>
+            <div class="contact_flex-c-s__text_list-c-s">
+                <p class="contact_flex-c-s__name_text-c-s">Name</p>
+                    <input placeholder="Ivan Ivanov" type="text" class="contact_flex-c-s__name_input-c-s">
+                    <div class="contact_flex-c-s__phone_add_email_text-c-s">
+                        <p class="contact_flex-c-s__email_text-c-s">Email</p>
+                        <p class="contact_flex-c-s__phone_text-c-s">Phone</p>
                     </div>
-                    <div class="phone_add_email-c-s">
-                        <input type="Email" class="input_line-c-s">
-                        <input type="tel" class="input_line_email-c-s">
+                    <div class="contact_flex-c-s__phone_add_email-c-s">
+                        <input type="Email" class="contact_flex-c-s__input_line-c-s">
+                        <input type="tel" class="contact_flex-c-s__input_line_email-c-s">
                     </div>
-                <p class="message_text-c-s">Message</p>
-                    <input class="message_input-c-s">
+                <p class="contact_flex-c-s__message_text-c-s">Message</p>
+                    <input class="contact_flex-c-s__message_input-c-s">
             </div>
-                <label for="checkbox_message_id" class="checkbox_label-c-s">
-                    <input type="checkbox" id="checkbox_message_id" class="checkbox_message-c-s" checked>
-                    <span class="span-c-s">By clicking on the button, you consent to the processing of your personal data</span>
+                <label for="checkbox_message_id" class="contact_flex-c-s__checkbox_label-c-s">
+                    <input type="checkbox" id="checkbox_message_id" class="contact_flex-c-s__checkbox_message-c-s" checked>
+                    <span class="contact_flex-c-s__span-c-s">By clicking on the button, you consent to the processing of your personal data</span>
                 </label>
-            <button class="contact_button-c-s">SUBMIT</button>
+            <button class="contact_flex-c-s__contact_button-c-s">SUBMIT</button>
         </div>
     </form>
 
     <div class="text_list-c-s">
         <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
         <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-        <h2 class="text_name-c-s">AN EXPERT IS WAITING TO HELP YOU!</h2>
+        <h2 class="text_list-c-s__name-c-s">AN EXPERT IS WAITING TO HELP YOU!</h2>
     </div>
 </div>
 </main>
 
 @@include('blocks/footer.html')
+@@include('blocks\music.html')
     
 </body>
 </html>
